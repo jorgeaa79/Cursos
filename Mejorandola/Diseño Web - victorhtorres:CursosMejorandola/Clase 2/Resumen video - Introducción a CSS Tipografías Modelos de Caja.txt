@@ -1,0 +1,89 @@
+====================================================================================================
+* Ayuda a complementar este archivo en GitHub dando un "Pull Request" o "Fork" para tener un clon en tu perfil.
+* Gracias Mejorando.la
+* Creado por @VictorHTorres.
+=====================================================================================================
+
+* RETO 1: ¿Como hacer que el texto se vea bien en diferentes pantallas? Solución: La minima fuente 100% legible en todas las plataformas es a 16px.
+
+* RETO 2: Retina. Las fuentes se optimizan solas. Una imagen no le sucede lo mismo, queda pixelada en retina. Solución: exportar la imagen al doble de pixeles que vamos a usar y achicarla en css o html.
+
+* Normalize: Es un archivo .css que puedes descargar en http://necolas.github.io/normalize.css/ y su función es hacer que los estilos básicos de un sitio web arranquen bien en todos los navegadores. Ejemplo: el archivo ya tiene por defecto el tamaño de fuente a 16px.
+
+* Debajo de la etiqueta <title> ponemos el(los) link(s) de los estilos del sitio, ejemplo: <link rel="stylesheet" href="normalize.css" />
+
+* Existen tres tipos de estilos: Las etiquetas propias de HTML (header, setion, footer, etc..), ID (#nombred_del_div) y Clases (.estoesclase).
+
+* Una buena practica en CSS es poner los estilos en orden del abecedario. También se debe tener en cuenta que es más importante una etiqueta que un div y este último es más importante que una clase (por si empiezan con la misma letra). Adicionalmente, los atributos también se colocan en orden alfabetico.
+
+* Colores hexadecimales: Se dió una breve explicación sobre el uso de los colores RGB, ejemplo: #AA00FF. Visita el siguiente enlace para conocer más de los colores hexadecimales: http://www.cristalab.com/tutoriales/que-es-rgb-red-green-blue-c47782l/
+
+* En el archivo CSS podemos llamar una etiqueta que esté dentro de otra etiqueta, ejemplo:
+
+header figure
+{
+	atributo: valor;
+}
+
+Significa que <figure> esta dentro del <header>.
+
+* border-radius en CSS: redondea las esquinas de imagenes o cajas.
+
+* Tamaño EM en CSS: En algunos casos en vez de utilizar "px" en fuentes, imagenes y padding, se puede usar "em", que significa el tamaño de una "M" (la letra más cuadrada) y CSS lo que hace es buscar el valor "px" más cercano y lo asume a 1em, ejemplo: le asignamos a una etiqueta 2em y el px más cercano tiene valor de 16px, entonces el valor que va tomar la etiqueta es 32px.
+
+* Display, float, position: los tres se usan de igual importancia en CSS3 y sirve para ajustar las cajas de información del sitio web. 
+
+	* Las etiquetas como header, section, article, footer y otras más tienen por defecto la propiedad display:block;
+	* las etiquetas como img, video, span y strong tienen por defecto la propiedad display:inline.
+	* La propiedad display:inline-block me permite tener varios objetos o cajas en una sola linea.
+	* La propiedad position sin declarar por defecto será position: estatic;
+	* La propiedad position: relative me genera 4 nuevos atributos: top, left, bottom, right.
+	* La propiedad position: absolute toma la posición (0,0) de la position: relative más cercana.
+
+Más info de cada una de las propiedades:
+
+Display: https://developer.mozilla.org/en-US/docs/Web/CSS/display [INGLES].
+Float: https://developer.mozilla.org/en-US/docs/Web/CSS/float [INGLES].
+Position: https://developer.mozilla.org/en-US/docs/Web/CSS/position [INGLES].
+
+
+* -box-shadow: para darle sombra a los objetos en CSS3. ejemplo:
+
+#objeto
+{
+	-box-shadow: rgba(0,0,0,0.5) 5px 5px 20px
+}
+
+Los primeros tres ceros hacen referencia al color en hexadecimal. El 0.5 hace referencia al % de transparencia. Los valores 5px 5px hacen referencia a los ejex (X,Y) y el valor 20px hace referencia al % de difuminación.
+
+*Seudoelementos: permite dar estilos a etiquetas que se repiten dentro de un contenedor pero en orden de hijos (first-child ó last-child), ejemplo:
+
+footer p: first-child
+{
+	atributo: valor;
+}
+
+La función first-child va a busca la primera etiqueta <p> que este dentro del <footer> y le agrega el estilo que definamos.
+
+También podemos usar la función "after" junto con la propiedad "content" para agregar texto desde CSS. Ejemplo:
+
+footer p:last-child:after
+{
+	content: "HOLA!";
+}
+
+El estilo anterior lo que hará es agregar la palabra HOLA al final de la caja <p>
+
+* nth-child(numero de posición): atributo que sirve para ubicar la etiqueta a darle estilo (cuando son más de dos en un contenedor). Para esos casos es mejor crearle una clase.
+
+* min-height: atributo para darle un minimo de alto a un objeto o caja en CSS3.
+
+* El underscore "_" es el simbolo recomendado para separar palabras en el código. El guion medio "-" es para las url.
+
+* Según freddier, la mejor herramienta para hacer mockups es el propio papel y lapiz.
+
+* caniuse.com sirve para averiguar que cosas funcionan en tal navegador. Para los navegadores que no funciona, usar http://leaverou.github.io/prefixfree/
+
+* overflow-hidden: no aplica en position:absolute
+
+* Minificar los archivos CSS. Para conocer más sobre que es minificar y herramientas para ello, visiten este sitio que encontré: http://tecnodiseno.com/que-es-minificar-el-css-y-5-herramientas-online-para-realizarlo/

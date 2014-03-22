@@ -1,0 +1,55 @@
+<!-- 
+* En esta clase logramos evidenciar la estructura semantica que debe tener un archivo .html en su versión 5.
+* Cada etiqueta del código tiene su respectivo comentario, en el cual detalla su forma de uso y funcionamiento.
+* Ayuda a complementar este archivo dando un "Pull Request" o "Fork" para tener un clon en tu perfil.
+* Gracias Mejorando.la
+* Creado por @VictorHTorres.
+ -->
+
+<!DOCTYPE html> 
+<!-- DOCTYPE le indica al servidor donde esta alojado nuestro sitio web, que tipo de documento será visualizado. -->
+<html lang="es"> <!--Le indica al servidor en que lenguaje será visualizado nuestro sitio web.-->
+<head><!--Es el primer elemento que lee el navegador y se coloca la información de los meta para buscadores, la codificación del archivo, el título de la página y los scripts-->
+	<meta charset="utf-8">
+	<meta name="description" content="Aprendiendo a crear la web con Mejorando.la">
+	<title>
+	Mi primera Web en HTML5
+	</title>
+</head>
+<body><!-- aqui va el cuerpo de la página -->
+	<header><!-- Etiqueta nueva en HTML5: Se usa para el cabecero de nuestra página web. -->
+		<H1>Curso de Diseño web en Mejorando.la</H1>
+	</header>
+	<section><!-- Para definir contenido se usan tres: section, article y aside. La section me permite dividir contenido en varias secciones del sitio, ejemplo: Un blog contiene varios post y un gestor de comentario. Para el área del post es un SECTION y para el gestor de comentarios, otro SECTION. -->
+		<article><!--Es el último elemento de etiquetas semanticas que se coloca y se define para contenido independiente, ejemplo: Seguimos usando el ejemplo anterior. Cada post de un blog esta dentro de un ARTICLE y cada comentario esta dentro de otro ARTICLE. En resumen: Si tenemos un blog con 1 post y 10 comentarios, entonces tendremos 2 SECTION y 11 ARTICLE -->
+			(VIDEO EN HTML5)
+			<video id="mejorandola" width="640" height="320" controls><!-- Debe tener una id para estilos, un ancho y alto para visualizar el video. -->
+				<source src="video.mp4" type="video/mp4; codecs='avc1,mp4'" /><!--Esto para formato de video H.264-->
+				<source src="video.webm" type="video/webm; codecs='vp8,vorbis'" /> <!-- Si queremos tener dos formatos para ser más compatibles con los navegadores, entonces copiamos la misma linea <source> anterior pero para formato WebM.-->
+			</video>		
+		</article>
+		<aside>
+			<!-- Lo que no hace parte del contenido principal de nuestro sitio web y puede ir en cualquier parte de nuestro sitio web. -->
+			(BOTONES SOCIALES)
+		</aside>
+		<article>
+			(CHAT)
+		</article>
+	</section>
+	<footer><!-- Exclusivo para el pie de página -->
+		Con @Freddier y @Cvander
+	</footer>
+</body>
+</html>
+<!-- 
+*** TIPs Adicionales: ***
+*
+* Siempre debemos guardar el archivo en codificación utf-8.
+* Todos los tag semanticos (header, section, article, etc..) reemplaza los divs que se usaban para esto, pero los divs no estan del todo muerto.
+* Si tienen botonera o menú, usan la etiqueta <nav></nav>.
+* No implemente componentes de diseño gráfico en HTML5.
+* http://modernizr.com/ libreria en javascript que permite visualizar las etiquetas de HTML5 en cualquier navegador web.
+* Google recomienda tener un solo H1 por página.
+* https://developer.mozilla.org/es/docs/HTML/Formatos_admitidos_de_audio_y_video_en_html5 para mas información sobre los codecs de <video>.
+*
+-->

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Proyecto de la primera generación del 2014 del curso de diseño web online" /><!-- 160 caracteres max. y debe ser diferente en cada página -->
+	<title>Puls2014: Comunidad online de gente atractiva</title><!-- Tiene las mismas reglas que el meta description -->
+	<link rel="stylesheet" href="normalize.css" /> <!--Siempre abajo del title -->
+	<link rel="stylesheet" href="estilos.css" /> <!-- le va agregar estilos a mi diseño -->
+
+</head>
+<body>
+	<header>
+		<figure id="logo"> <!-- Etiqueta especial para imagenes. Recomendado ponerle ID a elementos unicos. -->
+			<img src="logo.png" /> <!-- Debo usar la mitad de pixeles de la imagen para retina display -->
+		</figure>
+		<h1>Puls2014: Comunidad de personas atractivas y millonarias</h1> <!-- Titulo principal y solo uno por página -->
+		<figure id="avatar">
+			<img src="avatar.jpg" />
+		</figure>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">Python</a></li>
+			<li><a href="#">HTML5</a></li>
+			<li><a href="#">Javascript</a></li>
+			<li><a href="#">CSS3</a></li>
+			<li><a href="#">Django</a></li>
+			<li id="publicar_nav">
+				<a href="#">Publicar</a>
+			</li>
+		</ul>
+	</nav>
+	<section id="contenido">
+		<article class="item"> <!-- diferencia entre class e ID: ID es irrepetible y class es repetible.-->
+			<figure class="imagen_item"><!-- se recomienda usar class porque se va repetir en esta seccion del sitio web. -->
+				<img src="imagen.jpg" />
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">Título del artículo</a>
+			</h2>
+			<div class="autor_item">
+				Por <a href="#">Maika Gonzalez</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">Pony</a>
+				<span class="fecha_item">
+					Hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up"></a>
+				696
+				<a href="#" class="down"></a>
+				<a href="#" class="comentarios_item">3</a>
+				<a href="#" class="guardar_item"></a>
+			</div>
+		</article>
+	</section>
+	<footer>
+		<p>
+			<strong>Powered by Pony</strong>
+		</p>
+		<p>mejorando.la 2013</p>
+	</footer>
+</body>
+</html>
+
+<!-- RECOMENDACIONES:
+
+* Todas las etiquetas deben estar en minusculas.
+* Si yo abro una etiqueta, se debe cerrar.
+* Los atributos van cerrados en comillas.
+* Identar las etiquetas de forma correctar "cierre de etiquetas".
+
+-->
+

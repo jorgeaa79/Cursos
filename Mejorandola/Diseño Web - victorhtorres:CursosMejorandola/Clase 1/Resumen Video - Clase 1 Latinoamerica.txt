@@ -1,0 +1,41 @@
+====================================================================================================
+* Ayuda a complementar este archivo en GitHub dando un "Pull Request" o "Fork" para tener un clon en tu perfil.
+* Gracias Mejorando.la
+* Creado por @VictorHTorres.
+=====================================================================================================
+
+* La Internet siempre estará rodeada de tendencias, esta al cambio constante sobre como se comunica, su tecnología y lo importante de esto es que asumas con "madurez" dichos cambios y los aceptes como un nuevo reto para aprender más y ser cada día mejor en lo que haces. Un ejemplo claro de esto es la muerte de flash en la web...
+
+* MOBILE FIRST: Es la nueva tendencia de empezar un proyecto en la web adaptado primero a dispositivos mobiles e ir expandiendose a resoluciones de pantalla mayores a 320px. Un ejemplo claro de esto es INSTRAGRAM, que empezo como app y terminó en escritorio. Se recomienda también poner un límite máximo del ancho en el diseño.
+
+* Todo proyecto en la web debe tener DISEÑO ELÁSTICO, donde el ancho del diseño se adapta al tamaño de la pantalla. Esto se complementa con el RESPONSIVE DESIGN, el cual consta de transformar el diseño para no mostrar ciertas partes o modificarlas con el fin de que respondan a la necesidad del diseño en otras resoluciones de pantalla.
+
+* RETINA DISPLAY: Esto significa el doble pixeles por pulgada en las resoluciones de pantalla de los dispositivos moviles como iphone 4S+, Ipads tercera generación+, Android 4.0+ y entre otros... Esto es belleza pura para nuestros ojos pero sería una pena si tu diseño no esta adaptado para retina display. Solución: exportar las imagenes de tu proyecto al doble de la resolucíón deseada. Ejemplo: un logo de 100px x 100px ahora debe ser a 200px x 200px. NOTA: Las fuentes (letras) de nuestro sitio web no tendrán problemas en retina porque son vectoriales y se escalan matemáticamente. Para más información sobre retina display, puedes consultarlo el siguiente artículo en cristalab: http://www.cristalab.com/blog/que-significa-retina-display-en-el-diseno-web-c108299l/
+
+* ELEMENTOS QUE COMPONEN EL DISEÑO WEB: Todo empieza por la base de datos (MySQL, Postgres, MongoDB, etc...), luego tenenemos el BACKEND con sus respectivos lenguajes de programación o frameworks (Php, Djando, Express.js, Node.js, Socket.io) y por último tenemos en FRONTEND (HTML5, CSS3, Javascript [jquery, y otros frameworks]) donde el único lenguaje de progrmación para el frontend es el Javascript y los demás son frameworks o lenguajes modelados de datos o estilos (HTML5 y CSS3).
+
+* LOS MOCKUPS: Son bosquejos del diseño que deben ser muy simples (feos) para no limitar la creatividad del diseñador. Los mockups pueden pasar por varias etapas, desde un simple dibujo a mano en un cuaderno, hasta un elegante diseño en ilustrator (ejemplo).
+
+* EL FTP Y SUS INCONVENIENTES:
+1) No pueden trabajar de manera colectivamente al mismo tiempo.
+2) No hay culpa. Ejemplo: Alguien subió un archivo que fastidio todo el proyecto y al final "nadie lo hizo", nadie se hace responsable.
+3) No hay forma de estar actualizado.
+
+* LA TENDENCIA ES USAR CONTROL DE VERSIONES (GITHUB): Supera el uso del FTP. Algunas de sus ventajas son:
+1) Cambios delta: Actualiza solo las lineas de código modificadas.
+2) Historial de cambios.
+3) Multiples personas trabajando en el mismo archivo.
+4) Culpa al culpable.
+5) Zonas experimientables y revisiones sujetas a validación por un master antes de actualizar.
+
+Aqui un tutorial por mejorandola para usar GitHub: https://www.youtube.com/watch?v=udughzlN5M4
+
+* RECOMENDACIÓN EN HTML5: Tome decisiones pensando en la estructura de contenido pero no en el diseño.
+
+* Nueva etiqueta vista en HTML5 <figure></figure>: Exclusiva para la inserción de imagenes.
+
+*over-flow:hidden : Aqui explica con detalle el funcionamiento de este atributo en CSS: http://www.desarrolloweb.com/articulos/atributo-overflow-css.html
+
+=====================================================================================================
+Luego se trabajó en el proyecto Puls...
+=====================================================================================================

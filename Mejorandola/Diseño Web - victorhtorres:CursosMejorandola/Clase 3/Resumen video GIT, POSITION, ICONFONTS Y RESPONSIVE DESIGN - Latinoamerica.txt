@@ -1,0 +1,105 @@
+====================================================================================================
+* Ayuda a complementar este archivo en GitHub dando un "Pull Request" o "Fork" para tener un clon en tu perfil.
+* Gracias Mejorando.la
+* Creado por @VictorHTorres.
+=====================================================================================================
+
+* Google fonts: Ideal para integrar fuentes de texto diferente a las que trae por defecto a mostrar en la web nuestros equipos.
+
+	* Open sans (fuente recomendada).
+
+* Fontsquirrel.com para descargar las fuentes totalmente gratis. Asegurate de descargar en todos los formatos. Creamos una carpeta en nuestro proyecto y ponemos todas las fuentes ahí y las llamamos desde CSS con el atributo @font-face. Una buena practica es tener de primero el @font-face en CSS. Para más info: http://www.desarrolloweb.com/articulos/intro-font-face.html
+
+* Iconmoon.io: galería de iconos y poder personalizarla. Nota: Se le puede agregar color con CSS a dichas fuentes.
+
+* selectores en CSS: 
+
+elemento[atributo^="valor"], selecciona todos los elementos que disponen de ese atributo y cuyo valor comienza exactamente por la cadena de texto indicada.
+
+elemento[atributo$="valor"], selecciona todos los elementos que disponen de ese atributo y cuyo valor termina exactamente por la cadena de texto indicada.
+
+elemento[atributo*="valor"], selecciona todos los elementos que disponen de ese atributo y cuyo valor contiene la cadena de texto indicada.
+
+Los selectores de antes y que siguen vigentes en CSS3: http://www.w3.org/TR/css3-selectors/
+
+Más sobre los selectores nuevos en CSS3: http://librosweb.es/css_avanzado/capitulo_3/selectores_de_css_3.html
+
+* Inspector de elementos en Chrome: una herramienta recomendada en el navegador chrome, para hacer test de nuestro código y ver los cambios al instante en el sitio web. Se activa pulsando la opción f12.
+
+* Viewport y mediaquery: Lo primero que se debe conocer para hacer responsive design.
+
+	* Viewport:
+
+	Sintaxis: Colocar debajo del meta description:
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+
+	Para más info: https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag
+
+	Otro enlace con más info: http://www.desarrolloweb.com/articulos/etiqueta-meta-viewport.html
+
+	* mediaquery: Son consultas que le hacemos a nuestro sitio web para conocer su estado actual y dependiendo de dicho estado, hacerle cambios al diseño., ejemplo: Si estamos a 800px de ancho, entonces que ya no sea una columna de artículos sino dos.
+
+	Puedo llamar mediaquery mediante una hoja de estilo o meterlo en uno ya existente (recomendado). Si escojemos uno existente, entonces lo ponemos al final de los estilos.
+
+	Sintaxis:
+
+
+	@media screen and (min-width: 800px){
+
+		etiqueta1
+		{
+			atributo1: valor1;
+		}
+		.
+		.
+		.
+		etiquetaN
+		{
+			atributoN: valorN;
+		}
+
+	}
+
+	Mas ejemplos: http://www.w3schools.com/css/css_mediatypes.asp
+
+* nth-child(odd) para tomar todos los impares.
+
+* Etiqueta <aside></aside>: etiqueta de HTML5 para colocar toda la información que no es relevante en nuestro sitio web.
+
+* display:none en CSS ayuda a no visualizar una caja en nuestro frontend.
+
+* Prefijos propietarios: algunos atributos no funcionan sin no tiene prefijos propietarios. Con http://leaverou.github.io/prefixfree/ eliminamos esos prefijos. Descagar el archivo .js y lo llamamos desde html:
+
+Sintaxis: Poner debajo de los estilos.
+
+<script src="nombrearchivo.js"></script>
+
+* EFECTOS EN CSS: 
+
+	* transformaciones:
+
+	Sintaxis:
+
+	etiqueta
+	{
+		transform: rotate(valordeg);
+	}
+
+	Ejemplo: http://www.w3schools.com/cssref/css3_pr_transform.asp
+
+	* Atributo transition: http://www.w3schools.com/css/css3_transitions.asp
+
+	* Atributo Hover:
+
+	Sintaxis:
+
+	etiqueta:hover
+	{ 
+		atributo:valor;
+	}
+
+	Ejemplos: http://www.w3schools.com/cssref/sel_hover.asp
+
+
+
