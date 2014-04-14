@@ -1,4 +1,218 @@
-body
+/*etiqueta { atributo: valor del atributo;   }*/
+/*em es el tamaño relativo a la fuente principal (font-size body) 1em=font-size 2em=2xfont-size, si cambiamos la fuente el diseño se ajusta*/
+/*margin; 0(arriba) 0(derecha) 0(abajo) 0(izquierda), como las agujas de un reloj*/
+a 
 {
-	background: #EEEEEE;
+	color: #22BCE0; /*Color de los enlaces*/
 }
+ body
+{
+ 	background: #EEEEEE; /*Color del fondo*/
+ 	font-family: "Arial"; /*Fuente por defecto*/
+ 	font-size: 16px; /*Tamaño Fuente de texto por defecto min 16px*/
+}
+footer
+{
+	background: #22BCE0;
+	color: rgba(255,255,255,0.7); /*color blanco 255 255 255 con 0.7 de difuminacion*/
+	text-align: center;
+	padding: 1em;
+}
+footer p:first-child /*Es una pseudo clase-la primera etiqueta p con un estilo*/
+{
+	margin-bottom: 0;
+}
+footer p:last-child /*la primera etiqueta p con un estilo*/
+{
+	margin-top: 0;
+}
+footer p:last-child:after /*se le indica que tiene que añadir la propiedad antes del ultimo hijo*/
+{
+	content: " -";
+}
+footer p:last-child:before /*se le indica que tiene que añadir la propiedad despues del ultimo hijo*/
+{
+	content: "- ";
+}
+header 
+{
+	/*border: 1px solid red;*/ /*Borde fijo rojo de prueba para ver el objet sobre el que actuamos*/
+	background: #343B54; /*Color de fondo de header*/
+	color: white;  /*Color del texto del header*/
+	padding: 0.5em;/*padding es el margen interno de la caja, lleva em por que va relacionado con el body font-size*/
+	overflow: hidden; /*evita que se salgan del header los elementos que contiene*/
+	position: relative; /*Poniendo esto el avatar absolute coje el header como referencia y se ajusta a el*/
+}
+header figure /*todas la etiquetas figure que estan dentro de header*/
+{
+	float: left; /*todas las etiquetas figure flotando a la izquierda, cuando fotan pierden el margen*/
+}
+header h1  /*Etiqueta h1 del header*/
+{	
+	/*border: 1px solid red;*/
+	font-size: 1.2em; /*tamaño de la fuente*/
+	font-weight: normal; /*tipo de fuente, negrita, normal, etc..*/
+	margin: 0.2em 70px 0 0; /*añadimos un margen de 70x para que entre el avatar de 50px en el hueco que deja libre.*/
+}
+header #avatar
+{	
+	margin: 0.5em 0.5em 0 0;
+	position: absolute; /*El avata se despega y flota libremente ajustandose al la etiqueta position: relative; mas cercana.*/
+	right: 0; /*pega el avatar totamemnte a la derecha*/
+	top: 0;   /*pega el avatar a la parte superior*/
+}
+header #avatar img
+{
+	border-radius: 50%; /* */
+	width: 55px;
+	
+
+}
+header #logo img /*etiqueta de imagen que esta dentro del id logo dentro del header*/
+{
+	border-right: 1px solid white; /*añadimos una rayita blanca al borde izquierdo de la caja*/
+	margin-right: 0.5em; /*añadimos un margen exterior para separlo del titulo*/
+	padding-right: 0.5em; /*añadimos un margen interno de 0.5em para separar la rayita blanca*/
+	width: 52px; /*ancho de 52 pixeles, al cambiar el ancho se reajusta de manera proporcional con el alto a*/
+}
+nav
+{
+	background: #80BCA3;
+	padding: 0 0.5em;
+	position: relative;
+}
+nav ul
+{
+	outline-style: none; /*se le quitan los puntos que aparecen por defecto con la lista*/
+	margin: 0;
+	padding: 0;
+}
+nav ul #publicar_nav
+{
+	position: absolute;
+	top: -0.4em;
+	right: 0;
+}
+nav ul #publicar_nav a
+{
+	background: #22BCE0;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px; /*lo mismo que a al texto pero aplicado a la caja*/
+	font-style: italic; /*cursiva*/
+	padding: 0.8em 0.5em; /*variamos el tamaño de la caja*/
+	text-decoration: none; /*para quitarle el subrayado al enlace*/
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px; /*primer valor es el color(rojo-255-,verde-255-,azul-255-,transparencia-alfa-) movimiento en el eje X (2px) movimiento en el eje Y(2px) difuminacion(5px)*/
+}
+nav ul li
+{
+	display: inline-block; /*para que la lista se muestre en linea, no una encima de otras*/
+	margin: 0 1em 0 0;
+}
+nav ul li a
+{
+	color: white; /*pongo los enlaces de la lista de color blanco*/
+	display: block; /*se lo ponemos para poder ponerle un padding interior, solo las cajas tienen padding y margin*/
+	padding: 0.5em 0;
+}
+#contenido
+{
+	margin: 1em;
+}
+#contenido .item
+{
+	background: white;
+	border-bottom: 3px solid #22BCE0;
+	margin-bottom: 0;
+	min-height: 128px; /*para que la caja tenga un alto minimo igual al alto de la imagen*/
+	position: relative;
+}
+#contenido .item .autor_item
+{
+	color: #AAA;
+}
+#contenido .item .datos_item
+{
+	margin: 1em 1em 0 0;
+	text-align: right;
+}
+#contenido .item .datos_item .fecha_item
+{
+	color: #AAA;
+}
+#contenido .item .datos_item .tag_item
+{
+	background: #F4502A;
+	border-radius: 0.5em;
+	color: white;
+	display: inline-block;
+	padding: 0.2em 0.5em;
+	float: left;
+	text-decoration: none;
+}
+#contenido .item .imagen_item
+{
+	float: left;
+	margin: 0 1em 0 0;
+}
+#contenido .item .imagen_item img
+{
+	width: 96px;
+}
+#contenido .item .titulo_item
+{
+
+}
+#contenido .item .titulo_item
+{
+	font-size: 1em;
+	font-style: italic;
+}
+#contenido .item .titulo_item a
+{
+	color: #444;
+	text-decoration: none;
+}
+#contenido .item .votacion
+{
+	background: white;
+	left: 0;
+	position: absolute;
+	top: 100%;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
